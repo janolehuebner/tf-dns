@@ -27,23 +27,13 @@ data "cloudflare_zone" "zone" {
   name = each.key
 }
 resource "cloudflare_record" "myrecord" {
-for_each = { for record in local.zone_data : "${record.record_type}${record.extra_data}-${record.record_name}.${record.zone_name}" => record }
-
+for_each = {
+  for record in local.zone_data : "${record.record_type}${record.extra_data}-${record.record_name}.${record.zone_name}" => record }
 
   zone_id = data.cloudflare_zone.zone[each.value.zone_name].id
-  name    = "${each.value.record_name}.${each.value.zone_name}" == "@.${each.value.zone_name}" ? "${each.value.zone_name}" : "${each.value.record_name}.${each.value.zone_name}"
-  type    = each.value.record_type
-  value   = each.value.record_value
-  ttl     = 300
-  priority = each.value.record_type == "MX" ? tonumber(each.value.extra_data) : 0
+  name      = "${each.value.record_name}.${each.value.zone_name}" == "@.${each.value.zone_name}" ? each.value.zone_name : "${each.value.record_name}.${each.value.zone_name}"
+  type      = each.value.record_type
+  value     = each.value.record_value
+  ttl       = 300
+  priority  = each.value.record_type == "MX" ? tonumber(each.value.extra_data) : 0
 }
-
-
-
-
-
-
-
-
-
-
