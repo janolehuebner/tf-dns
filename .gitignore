@@ -1,0 +1,7 @@
+venv/
+.idea/
+*.tfstate
++.tfstate.backup
+.terraform.lock.hcl
+.terraform
+auth.yaml
