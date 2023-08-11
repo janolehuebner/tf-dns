@@ -8,6 +8,7 @@ locals {
 
   zone_data = flatten([
     for zone_name, records in local.zones : [
+      records == null ? [] : [
       for record_type, record_values in records : [
         for record_name, record_value in record_values : {
           zone_name    = zone_name
@@ -18,7 +19,7 @@ locals {
 
         }
       ]
-    ]
+    ]]
   ])
 }
 
