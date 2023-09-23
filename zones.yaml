@@ -1,3 +1,63 @@
+jan-ole.link:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    leslie: 185.239.239.162
+    "*.leslie": 185.239.239.162
+
+ole.click:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    share: 185.223.31.112
+    "*.share": 185.223.31.112
+    leslie: 185.239.239.162
+    "*.leslie": 185.239.239.162
+
+krewella.rocks:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    leslie: 185.239.239.162
+    "*.leslie": 185.239.239.162
+
+jan-ole.tech:
+  a:
+    "@": 192.168.84.1
+    www: 192.168.84.1
+    leslie: 185.239.239.162
+    "*.leslie": 185.239.239.162
+
+jan-ole.de:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    "*.demo": 185.223.31.112
+    demo: 185.223.31.112
+    "influx": 134.255.232.17
+    "*.influx": 134.255.232.17
+    status: 185.223.31.112
+    "*.status": 185.223.31.112
+    leslie: 185.239.239.162
+    "*.leslie": 185.239.239.162
+    lina: 134.255.232.17
+    "*.lina": 134.255.232.17
+  txt:
+    "@": v=spf1 redirect=icloud.com
+    "@/10": apple-domain=FsvGrRPoGf8wHqLU
+  mx:
+    "@/10": mx01.mail.icloud.com
+    "@/20": mx02.mail.icloud.com
+  cname:
+    sig1._domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
+
+ole.pink:
+
+fairy-feet.de:
+  a:
+    "*": 134.255.232.17
+    "@": 134.255.232.17
+
 jan-ole.cloud:
   a:
     "*": 138.201.67.182
@@ -6,66 +66,3 @@ jan-ole.cloud:
   txt:
     "*": v=spf1 a mx include:ole.click -all
     "www": v=spf1 a mx include:ole.click -all
-
-jan-ole.link:
-  a:
-    "@": 46.38.249.190
-    www: 46.38.249.190
-    webmail: 46.38.249.190
-    mail: 46.38.249.160
-  aaaa:
-    "@": 2a03:4000:61:3f85::18:3398
-    "www": 2a03:4000:61:3f85::18:3398
-  cname:
-    autoconfig: autoconfig.netcup.net
-    key1_domainkey: key1._domainkey.webhosting.systems
-    key2_domainkey: key2._domainkey.webhosting.systems
-  txt:
-    "@": v=spf1 mx a include:_spf.webhosting.systems ~all
-  mx:
-    "@/10": mail.jan-ole.link
-    "@/50": mxf9a0.netcup.net
-
-ole.click:
-  a:
-    "@": 46.38.249.190
-    www: 46.38.249.190
-    webmail: 46.38.249.190
-    mail: 46.38.249.160
-    share: 46.38.249.190
-  aaaa:
-    "@": 2a03:4000:61:3f85::18:3398
-    "www": 2a03:4000:61:3f85::18:3398
-  cname:
-    autoconfig: autoconfig.netcup.net
-    key1_domainkey: key1._domainkey.webhosting.systems
-    key2_domainkey: key2._domainkey.webhosting.systems
-  txt:
-    "@": v=spf1 mx a include:_spf.webhosting.systems ~all
-  mx:
-    "@/10": mail.ole.click
-    "@/50": mxf9a0.netcup.net
-
-krewella.rocks:
-  a:
-    "@": 46.38.249.190
-    www: 46.38.249.190
-    webmail: 46.38.249.190
-    mail: 46.38.249.160
-  aaaa:
-    "@": 2a03:4000:61:3f85::18:3398
-    "www": 2a03:4000:61:3f85::18:3398
-  cname:
-    autoconfig: autoconfig.netcup.net
-    key1_domainkey: key1._domainkey.webhosting.systems
-    key2_domainkey: key2._domainkey.webhosting.systems
-  txt:
-    "@": v=spf1 mx a include:_spf.webhosting.systems ~all
-  mx:
-    "@/10": mail.krewella.rocks
-    "@/50": mxf9a0.netcup.net
-
-jan-ole.tech:
-  a:
-    "@": 192.168.84.1
-    www: 192.168.84.1
