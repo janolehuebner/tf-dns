@@ -1,68 +1,70 @@
-jan-ole.link:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    leslie: 185.239.239.162
-    "*.leslie": 185.239.239.162
-
-ole.click:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    share: 185.223.31.112
-    "*.share": 185.223.31.112
-    leslie: 185.239.239.162
-    "*.leslie": 185.239.239.162
-
-krewella.rocks:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    leslie: 185.239.239.162
-    "*.leslie": 185.239.239.162
-
-jan-ole.tech:
-  a:
-    "@": 192.168.84.1
-    www: 192.168.84.1
-    leslie: 185.239.239.162
-    "*.leslie": 185.239.239.162
-
 jan-ole.de:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
     "*.demo": 185.223.31.112
     demo: 185.223.31.112
-    "influx": 134.255.232.17
-    "*.influx": 134.255.232.17
-    status: 185.223.31.112
-    "*.status": 185.223.31.112
-    leslie: 185.239.239.162
-    "*.leslie": 185.239.239.162
-    lina: 134.255.232.17
-    "*.lina": 134.255.232.17
-  txt:
-    "@": v=spf1 redirect=icloud.com
-    "@/10": apple-domain=FsvGrRPoGf8wHqLU
+    server0: 185.239.239.162
+    "*.server0": 185.239.239.162
+    server1: 147.189.171.39
+    "*.server1": 147.189.171.39
+    influx: 185.239.239.162
+    "*.influx": 185.239.239.162
+    server3: 45.141.36.103
+    "*.server3": 45.141.36.103
+    portainer: 185.239.239.162
+    "*.portainer": 185.239.239.162
+    music: 147.189.171.39
+    "*.music": 147.189.171.39
+    usa.vpn: 181.214.240.124
+    "*.usa.vpn": 181.214.240.124
+  cname:
+    sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
   mx:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
-  cname:
-    sig1._domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
+  txt:
+    "@": apple-domain=Q0mWxVlJtosPs2oy
+    "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
 
-ole.pink:
+huebner.coffee:
+  cname:
+    sig1._domainkey: "sig1.dkim.huebner.coffee.at.icloudmailadmin.com."
+  mx:
+    "@/10": "mx01.mail.icloud.com"
+    "@/20": "mx02.mail.icloud.com"
+  txt:
+    "@": "apple-domain=3xAfDPSkrnPyp6Y4"
+    "@/10": "v=spf1 include:icloud.com ~all"
+
+jan-ole.download:
+  a:
+    "@": 185.239.237.65
+    www: 185.239.237.65
+    "*": 185.239.237.65
 
 fairy-feet.de:
   a:
-    "*": 134.255.232.17
-    "@": 134.255.232.17
+    "*": 147.189.171.39
+    "@": 147.189.171.39
+
+jan-ole.link:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+
+ole.click:
+  a:
+    "@": 185.239.237.65
+    www: 185.239.237.65
+
+krewella.rocks:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+
+jan-ole.tech:
 
 jan-ole.cloud:
-  a:
-    "*": 138.201.67.182
-    "@": 138.201.67.182
-    www: 138.201.67.182
-  txt:
-    "*": v=spf1 a mx include:ole.click -all
-    "www": v=spf1 a mx include:ole.click -all
+
+ole.pink:
