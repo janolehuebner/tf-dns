@@ -12,6 +12,8 @@ jan-ole.de:
     "*.influx": 185.239.239.162
     server3: 45.141.36.103
     "*.server3": 45.141.36.103
+    server2: 134.255.232.17
+    "*.server2": 134.255.232.17
     portainer: 185.239.239.162
     "*.portainer": 185.239.239.162
     music: 147.189.171.39
@@ -64,7 +66,14 @@ krewella.rocks:
     www: 185.223.31.112
 
 jan-ole.tech:
+  txt:
+    "@": 70dcbb22ee584668a5cef68b058043c3
 
 jan-ole.cloud:
 
 ole.pink:
+
+narilah.live:
+  a:
+    "@": 76.76.21.21
+    www: 76.76.21.21
