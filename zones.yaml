@@ -6,6 +6,8 @@ jan-ole.de:
     demo: 185.223.31.112
     server0: 185.239.239.162
     "*.server0": 185.239.239.162
+    ganymede: 185.239.239.162
+    "*.ganymede": 185.239.239.162
     server1: 147.189.171.39
     "*.server1": 147.189.171.39
     influx: 185.239.239.162
@@ -20,8 +22,23 @@ jan-ole.de:
     "*.music": 147.189.171.39
     usa.vpn: 181.214.240.124
     "*.usa.vpn": 181.214.240.124
+    palworld: 193.23.127.45
+    "*.palworld": 193.23.127.45
+    party: 147.189.171.39
+    "*.party": 147.189.171.39
   cname:
     sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
+    vercel: cname.vercel-dns.com
+    hannah: jan-ole.synology.me
+    "*.hannah": jan-ole.synology.me
+    photos: jan-ole.synology.me
+    "*.photos": jan-ole.synology.me
+    paperless: hannah
+    "*.paperless": hannah
+    bliss: hannah
+    "*.bliss": hannah
+    streaming: jan-ole.synology.me
+    "*.streaming": jan-ole.synology.me
   mx:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
@@ -72,8 +89,18 @@ jan-ole.tech:
 jan-ole.cloud:
 
 ole.pink:
-
-narilah.live:
   a:
-    "@": 76.76.21.21
-    www: 76.76.21.21
+    "@": 185.239.239.162
+    "*": 185.239.239.162
+narilah.live:
+
+cedricpump.de:
+  mx:
+    "@/10": "zap356617-2.plesk08.zap-webspace.com"
+  a:
+    "@": 185.239.237.65
+    www: 185.239.237.65
+    webmail: 185.239.237.65
+  txt:
+    default_domainkey: "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqJZ/c83IQGBLOE0hFWM30cnlafqoJdf9a1qGvLPkhQEtFEYnpkeoVIwHRdgWjbkCg2HjYILTWdUSU81ZkvOdxI7OYJqp0sGPq96tZ6Lqve4hXZy6WVy7e1AKUYK9dRSiHSxfUdEd2X8V59Z6y34f4se0bzb4c3G1saLpic3xXliAQnOknmegfGjXPZuWelpoNUieWyCAtVOdVsUaKOQ/ApITGt9Sm/kRfwnSHweaiubxaUbCZUY+k4z4hK4mQLuJSulBBL5XCCYVo6AKI2wP9leVaC4MGXB11PalpxT6y/VrbM9uLzi0ayZsXnyhnxJhjVhoaXiubQF0HSkI3a6VRQIDAQAB;"
+    _domainkey: "o=-"
