@@ -1,31 +1,44 @@
 jan-ole.de:
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    "*.demo": 185.223.31.112
-    demo: 185.223.31.112
+    #---servers
+    #server0--------------
     server0: 185.239.239.162
     "*.server0": 185.239.239.162
     ganymede: 185.239.239.162
     "*.ganymede": 185.239.239.162
-    server1: 147.189.171.39
-    "*.server1": 147.189.171.39
     influx: 185.239.239.162
     "*.influx": 185.239.239.162
-    server3: 45.141.36.103
-    "*.server3": 45.141.36.103
-    server2: 134.255.232.17
-    "*.server2": 134.255.232.17
     portainer: 185.239.239.162
     "*.portainer": 185.239.239.162
+
+    #server1--------------
+    server1: 147.189.171.39
+    "*.server1": 147.189.171.39
     music: 147.189.171.39
     "*.music": 147.189.171.39
+
+    #server2--------------
+    server2: 134.255.232.17
+    "*.server2": 134.255.232.17
+
+    #server3--------------
+    server3: 45.141.36.103
+    "*.server3": 45.141.36.103
+
+    #server4-USA----------
     usa.vpn: 181.214.240.124
     "*.usa.vpn": 181.214.240.124
+
+    #webspace0-------------
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    "*.demo": 185.223.31.112
+    demo: 185.223.31.112
+
+    #zap-gameserver
     palworld: 193.23.127.45
     "*.palworld": 193.23.127.45
-    party: 147.189.171.39
-    "*.party": 147.189.171.39
+
   cname:
     sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
     vercel: cname.vercel-dns.com
@@ -35,8 +48,6 @@ jan-ole.de:
     "*.photos": jan-ole.synology.me
     paperless: hannah
     "*.paperless": hannah
-    bliss: hannah
-    "*.bliss": hannah
     streaming: jan-ole.synology.me
     "*.streaming": jan-ole.synology.me
   mx:
@@ -88,12 +99,26 @@ jan-ole.tech:
 
 jan-ole.cloud:
 
+jan-ole.party:
+
+jan-ole.photo:
+
 ole.pink:
   a:
     "@": 185.239.239.162
     "*": 185.239.239.162
 narilah.live:
 
+huebner.haus:
+  cname:
+    jan-ole: jan-ole.synology.me
+    "*.jan-ole": jan-ole.synology.me
+
+huebner.homes:
+  cname:
+    jan-ole: jan-ole.synology.me
+    "*.jan-ole": jan-ole.synology.me
+#-----
 cedricpump.de:
   mx:
     "@/10": "zap356617-2.plesk08.zap-webspace.com"
