@@ -4,8 +4,6 @@ jan-ole.de:
     #server0--------------
     server0: 185.239.239.162
     "*.server0": 185.239.239.162
-    ganymede: 185.239.239.162
-    "*.ganymede": 185.239.239.162
     influx: 147.189.171.39
     "*.influx": 147.189.171.39
     portainer: 147.189.171.39
@@ -30,10 +28,6 @@ jan-ole.de:
     "*.usa.vpn": 181.214.240.124
 
     #webspace0-------------
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    "*.demo": 185.223.31.112
-    demo: 185.223.31.112
 
     #zap-gameserver
     palworld: 193.23.127.45
@@ -77,9 +71,6 @@ fairy-feet.de:
     "@": 147.189.171.39
 
 jan-ole.link:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
 
 ole.click:
   a:
@@ -92,8 +83,6 @@ krewella.rocks:
     www: 185.223.31.112
 
 jan-ole.tech:
-  txt:
-    "@": 70dcbb22ee584668a5cef68b058043c3
 
 jan-ole.cloud:
 
@@ -102,9 +91,7 @@ jan-ole.party:
 jan-ole.photo:
 
 ole.pink:
-  a:
-    "@": 185.239.239.162
-    "*": 185.239.239.162
+
 narilah.live:
 
 huebner.haus:
