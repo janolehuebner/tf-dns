@@ -4,6 +4,8 @@ jan-ole.de:
     #server0--------------
     server0: 185.239.239.162
     "*.server0": 185.239.239.162
+    pve: 185.239.239.162
+    "*.pve": 185.239.239.162
 
     #server1--------------
     server1: 147.189.171.39
@@ -89,17 +91,11 @@ krewella.rocks:
     "@": 185.223.31.112
     www: 185.223.31.112
 
-jan-ole.tech:
-
 jan-ole.cloud:
 
 jan-ole.party:
 
-jan-ole.photo:
-
 ole.pink:
-
-narilah.live:
 
 huebner.haus:
   cname:
