@@ -54,6 +54,7 @@ jan-ole.de:
   txt:
     "@": apple-domain=jCSU7oYX1R2qtWzG
     "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
+    "@/20": google-site-verification=rzO53ch4FY1zxgms9_FJAyE0nnj9_uRmLaSKqXw38ww
 
 huebner.coffee:
   cname:
@@ -80,6 +81,8 @@ jan-ole.link:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=HKmGUIFhbnE41t_358P10qZKhEufHzMAzlCSrv1iQW4
 
 ole.click:
   a:
@@ -92,8 +95,6 @@ krewella.rocks:
     www: 185.223.31.112
 
 jan-ole.cloud:
-
-jan-ole.party:
 
 ole.pink:
 
@@ -124,42 +125,57 @@ littleblondii.link:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=t7GFUeWz5_o8uNCiVC2neG9fykDyBNJpvrKOsm_rgJg
 
 littleblondii.live:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
 blondii.link:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=nCc2Fw7XciUq9-1eWAUPU1LhPaWx1gMeIKBaDDfy3Ks
 
 blondii.live:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
 littleblondii.de:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
-
+  txt:
+    "@": google-site-verification=QDQCs2MeR73I0xPktUMmsqa9PuPkytpXYdCQEI-ekaM
 
 cirii.link:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=mz-r1UCGgDSf_SrblpLFRBmCUyzFuvbd_ROTsQF_8oA
 
 cirii.live:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=znOYwzJskM1sIZhpSikU7e1-QFCVWXlcPl3VVk5o68o
 
 cirii.de:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+  txt:
+    "@": google-site-verification=RVjsHk1eDqRo0PCffqxguk3YRfFZtUdsUUgfEs_lzvo
 
 huebner.software:
 
