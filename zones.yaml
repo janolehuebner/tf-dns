@@ -160,3 +160,15 @@ cirii.de:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+
+huebner.software:
+
+huebner.pink:
+  cname:
+    sig1._domainkey: "sig1.dkim.huebner.pink.at.icloudmailadmin.com."
+  mx:
+    "@/10": "mx01.mail.icloud.com"
+    "@/20": "mx02.mail.icloud.com"
+  txt:
+    "@": "apple-domain=mOjnPLSTRwMrIocF"
+    "@/10": "v=spf1 include:icloud.com ~all"
