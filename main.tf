@@ -37,4 +37,5 @@ for_each = {
   value     = each.value.record_value
   ttl       = 300
   priority  = each.value.record_type == "MX" ? tonumber(each.value.extra_data) : 0
+  comment   = "OpenTofu"
 }
