@@ -109,17 +109,6 @@ huebner.homes:
   cname:
     jan-ole: jan-ole.synology.me
     "*.jan-ole": jan-ole.synology.me
-#-----
-cedricpump.de:
-  mx:
-    "@/10": "zap356617-2.plesk08.zap-webspace.com"
-  a:
-    "@": 185.239.237.65
-    www: 185.239.237.65
-    webmail: 185.239.237.65
-  txt:
-    default_domainkey: "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqJZ/c83IQGBLOE0hFWM30cnlafqoJdf9a1qGvLPkhQEtFEYnpkeoVIwHRdgWjbkCg2HjYILTWdUSU81ZkvOdxI7OYJqp0sGPq96tZ6Lqve4hXZy6WVy7e1AKUYK9dRSiHSxfUdEd2X8V59Z6y34f4se0bzb4c3G1saLpic3xXliAQnOknmegfGjXPZuWelpoNUieWyCAtVOdVsUaKOQ/ApITGt9Sm/kRfwnSHweaiubxaUbCZUY+k4z4hK4mQLuJSulBBL5XCCYVo6AKI2wP9leVaC4MGXB11PalpxT6y/VrbM9uLzi0ayZsXnyhnxJhjVhoaXiubQF0HSkI3a6VRQIDAQAB;"
-    _domainkey: "o=-"
 
 littleblondii.link:
   a:
