@@ -27,6 +27,7 @@ data "cloudflare_zone" "zone" {
   for_each = local.zones
   name = each.key
 }
+
 resource "cloudflare_record" "myrecord" {
 for_each = {
   for record in local.zone_data : "${record.record_type}${record.extra_data}-${record.record_name}.${record.zone_name}" => record }
