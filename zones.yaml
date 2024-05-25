@@ -52,7 +52,7 @@ jan-ole.de:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
   txt:
-    "@": apple-domain=Q0mWxVlJtosPs2oy
+    "@": apple-domain=jCSU7oYX1R2qtWzG
     "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
 
 huebner.coffee:
