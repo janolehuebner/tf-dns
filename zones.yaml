@@ -10,12 +10,6 @@ jan-ole.de:
     #server1--------------
     server1: 147.189.171.39
     "*.server1": 147.189.171.39
-    music: 147.189.171.39
-    "*.music": 147.189.171.39
-    influx: 147.189.171.39
-    "*.influx": 147.189.171.39
-    portainer: 147.189.171.39
-    "*.portainer": 147.189.171.39
 
     #server2--------------
     server2: 134.255.232.17
@@ -40,31 +34,27 @@ jan-ole.de:
     "*.palworld": 193.23.127.45
 
   cname:
+    influx: jan-ole.synology.me
+    "*.influx": jan-ole.synology.me
     sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
-    vercel: cname.vercel-dns.com
     hannah: jan-ole.synology.me
     "*.hannah": jan-ole.synology.me
     photos: jan-ole.synology.me
     "*.photos": jan-ole.synology.me
     streaming: jan-ole.synology.me
     "*.streaming": jan-ole.synology.me
+    lana: jan-ole.synology.me
+    "*.lana": jan-ole.synology.me
   mx:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
   txt:
-    "@": apple-domain=jCSU7oYX1R2qtWzG
+    "@": apple-domain=OQLm26hZZUfPPxoQ
     "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
     "@/20": google-site-verification=rzO53ch4FY1zxgms9_FJAyE0nnj9_uRmLaSKqXw38ww
+    "_discord": dh=ddb43cee298d9a23196b21847105f88aafae8350
 
 huebner.coffee:
-  cname:
-    sig1._domainkey: "sig1.dkim.huebner.coffee.at.icloudmailadmin.com."
-  mx:
-    "@/10": "mx01.mail.icloud.com"
-    "@/20": "mx02.mail.icloud.com"
-  txt:
-    "@": "apple-domain=3xAfDPSkrnPyp6Y4"
-    "@/10": "v=spf1 include:icloud.com ~all"
 
 jan-ole.download:
   a:
@@ -73,9 +63,6 @@ jan-ole.download:
     "*": 185.239.237.65
 
 fairy-feet.de:
-  a:
-    "*": 147.189.171.39
-    "@": 147.189.171.39
 
 jan-ole.link:
   a:
@@ -88,15 +75,27 @@ ole.click:
   a:
     "@": 185.239.237.65
     www: 185.239.237.65
-
-krewella.rocks:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
+  txt:
+    "_discord": dh=9f248b2dbca94cc3e47b672ad6a33415750fbc4e
 
 jan-ole.cloud:
+  a:
+    "*": 185.249.197.56
+    "@": 185.249.197.56
+    pve: 185.239.239.162
+    pfsense: 185.249.197.56
+    vm0: 193.34.69.94
+  cname:
+    hannah: jan-ole.synology.me
+    "*.hannah": jan-ole.synology.me
+    lana: jan-ole.synology.me
+    "*.lana": jan-ole.synology.me
+    tube: jan-ole.synology.me
+    "*.tube": jan-ole.synology.me
 
 ole.pink:
+  txt:
+    "_discord": dh=8be51e2beb64f555b5170ee2da95fa5eba315250
 
 huebner.haus:
   cname:
@@ -106,9 +105,6 @@ huebner.haus:
     "*.heiko": kgh7xxzoeeajftib.myfritz.net
 
 huebner.homes:
-  cname:
-    jan-ole: jan-ole.synology.me
-    "*.jan-ole": jan-ole.synology.me
 
 littleblondii.link:
   a:
