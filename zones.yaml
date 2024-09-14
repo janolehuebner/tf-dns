@@ -44,7 +44,8 @@ jan-ole.de:
     streaming: jan-ole.synology.me
     "*.streaming": jan-ole.synology.me
     lana: jan-ole.synology.me
-    "*.lana": jan-ole.synology.me
+    dockge: jan-ole.synology.me
+    git: jan-ole.synology.me
   mx:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
@@ -86,6 +87,8 @@ jan-ole.cloud:
     pfsense: 185.249.197.56
     vm0: 193.34.69.94
   cname:
+    "*.next": jan-ole.synology.me
+    next: jan-ole.synology.me
     hannah: jan-ole.synology.me
     "*.hannah": jan-ole.synology.me
     lana: jan-ole.synology.me
@@ -161,6 +164,28 @@ cirii.de:
     www: 185.223.31.112
   txt:
     "@": google-site-verification=RVjsHk1eDqRo0PCffqxguk3YRfFZtUdsUUgfEs_lzvo
+
+darkblondii.link:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+  txt:
+    "@": google-site-verification=OtXtrYhaTsngZOMzfAwtgqUgnALh2sUfB8UoS53z0yo
+
+darkblondii.live:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+  txt:
+    "@": google-site-verification=iwzEIcfA2YXNIPFEs7gjkPJbeS8uJeF9KZIwxDiJeks
+
+darkblondii.de:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+  txt:
+    "@": google-site-verification=u9v4bvqD26WB5o8nO7zW9VMG5ZmjcNTSK_f6sAuNYSc
+
 
 huebner.software:
 
