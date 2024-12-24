@@ -28,6 +28,8 @@ jan-ole.de:
     www: 185.223.31.112
     "*.demo": 185.223.31.112
     demo: 185.223.31.112
+    "*.nuxt": 185.223.31.112
+    nuxt: 185.223.31.112
 
     #zap-gameserver
     palworld: 193.23.127.45
@@ -36,16 +38,13 @@ jan-ole.de:
   cname:
     influx: jan-ole.synology.me
     "*.influx": jan-ole.synology.me
+    books: jan-ole.synology.me
     sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
     hannah: jan-ole.synology.me
     "*.hannah": jan-ole.synology.me
-    photos: jan-ole.synology.me
-    "*.photos": jan-ole.synology.me
     streaming: jan-ole.synology.me
     "*.streaming": jan-ole.synology.me
     lana: jan-ole.synology.me
-    dockge: jan-ole.synology.me
-    git: jan-ole.synology.me
   mx:
     "@/10": mx01.mail.icloud.com
     "@/20": mx02.mail.icloud.com
@@ -54,8 +53,6 @@ jan-ole.de:
     "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
     "@/20": google-site-verification=rzO53ch4FY1zxgms9_FJAyE0nnj9_uRmLaSKqXw38ww
     "_discord": dh=ddb43cee298d9a23196b21847105f88aafae8350
-
-huebner.coffee:
 
 jan-ole.download:
   a:
@@ -180,12 +177,28 @@ darkblondii.live:
     "@": google-site-verification=iwzEIcfA2YXNIPFEs7gjkPJbeS8uJeF9KZIwxDiJeks
 
 darkblondii.de:
+  mx:
+    "@/10": darkblondii.de
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+    webmail: 185.223.31.112
   txt:
-    "@": google-site-verification=u9v4bvqD26WB5o8nO7zW9VMG5ZmjcNTSK_f6sAuNYSc
+    "@": "v=spf1 a mx -all"
+    default._domainkey: "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr/e2vHLlv6CTwMoxHeyJxppb2d7z+voH7DeBOSQI/QM5qBT0yfLBJEg1/ayTrHIyzbXd0DOVfsk/Wv7i3fpPHnFfw9CYSIn8pQEL9+seUc/VP9FJ68+9akPkwUGinqE4nGkT7ByqDrUeZzErQMX1nqXxkwx0JpBZqFTxfNYi6IphbUSu4xatkFbGBFFOPiHxYyIZdp35uiHL8Ub+tpDJpQ7zLf5VVwlY9EeakzslV+UJhG/ANh6dkQwyXrdT0QQ0lC8RS1CF9qs060blqwk/QZvQG6WRON0aq6F/p+FZ4P7hFMoUiHVokdW1GIAXUpleTwXnXGZmJG4g2dM6HFv+fQIDAQAB;"
+    _domainkey: "o=-"
+    _DMARC: "v=DMARC1; p=quarantine; rua=mailto:huebner@jan-ole.de; ruf=mailto:huebner@jan-ole.de; fo=1"
 
+rosadirk.live:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    webmail: 185.223.31.112
+rosadirk.de:
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    webmail: 185.223.31.112
 
 huebner.software:
 
