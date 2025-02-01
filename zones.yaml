@@ -36,21 +36,19 @@ jan-ole.de:
     "*.palworld": 193.23.127.45
 
   cname:
-    influx: jan-ole.synology.me
-    "*.influx": jan-ole.synology.me
-    books: jan-ole.synology.me
+    influx: lana.amq25ga7psako0gd.myfritz.net.
+    "*.influx": lana.amq25ga7psako0gd.myfritz.net.
+    books: lana.amq25ga7psako0gd.myfritz.net.
     sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
-    hannah: jan-ole.synology.me
-    "*.hannah": jan-ole.synology.me
-    streaming: jan-ole.synology.me
-    "*.streaming": jan-ole.synology.me
-    lana: jan-ole.synology.me
+    streaming: lana.amq25ga7psako0gd.myfritz.net.
+    "*.streaming": lana.amq25ga7psako0gd.myfritz.net.
+    lana: lana.amq25ga7psako0gd.myfritz.net.
   mx:
-    "@/10": mx01.mail.icloud.com
-    "@/20": mx02.mail.icloud.com
+    "@/10": mx01.mail.icloud.com.
+    "@/20": mx02.mail.icloud.com.
   txt:
     "@": apple-domain=OQLm26hZZUfPPxoQ
-    "@/10": v=spf1 redirect=icloud.com include:icloud.com ~all
+    "@/10": "v=spf1 redirect=icloud.com include:icloud.com ~all"
     "@/20": google-site-verification=rzO53ch4FY1zxgms9_FJAyE0nnj9_uRmLaSKqXw38ww
     "_discord": dh=ddb43cee298d9a23196b21847105f88aafae8350
 
@@ -84,14 +82,18 @@ jan-ole.cloud:
     pfsense: 185.249.197.56
     vm0: 193.34.69.94
   cname:
-    "*.next": jan-ole.synology.me
-    next: jan-ole.synology.me
-    hannah: jan-ole.synology.me
-    "*.hannah": jan-ole.synology.me
-    lana: jan-ole.synology.me
-    "*.lana": jan-ole.synology.me
-    tube: jan-ole.synology.me
-    "*.tube": jan-ole.synology.me
+    "*.photos": lana.amq25ga7psako0gd.myfritz.net.
+    photos: lana.amq25ga7psako0gd.myfritz.net.
+    "*.next": lana.amq25ga7psako0gd.myfritz.net.
+    next: lana.amq25ga7psako0gd.myfritz.net.
+    ganymede: lana.amq25ga7psako0gd.myfritz.net.
+    "*.ganymede": lana.amq25ga7psako0gd.myfritz.net.
+    hannah: lana.amq25ga7psako0gd.myfritz.net.
+    "*.hannah": lana.amq25ga7psako0gd.myfritz.net.
+    lana: lana.amq25ga7psako0gd.myfritz.net.
+    "*.lana": lana.amq25ga7psako0gd.myfritz.net.
+    tube: lana.amq25ga7psako0gd.myfritz.net.
+    "*.tube": lana.amq25ga7psako0gd.myfritz.net.
 
 ole.pink:
   txt:
@@ -99,10 +101,10 @@ ole.pink:
 
 huebner.haus:
   cname:
-    jan-ole: jan-ole.synology.me
-    "*.jan-ole": jan-ole.synology.me
-    heiko: kgh7xxzoeeajftib.myfritz.net
-    "*.heiko": kgh7xxzoeeajftib.myfritz.net
+    jan-ole: lana.amq25ga7psako0gd.myfritz.net.
+    "*.jan-ole": lana.amq25ga7psako0gd.myfritz.net.
+    heiko: kgh7xxzoeeajftib.myfritz.net.
+    "*.heiko": kgh7xxzoeeajftib.myfritz.net.
 
 huebner.homes:
 
@@ -117,6 +119,7 @@ littleblondii.live:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+
   txt:
     "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
@@ -131,6 +134,8 @@ blondii.live:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+    download: 185.223.31.112
+    "*.download": 185.223.31.112
   txt:
     "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
@@ -145,6 +150,7 @@ cirii.link:
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+    download: 185.223.31.112
   txt:
     "@": google-site-verification=mz-r1UCGgDSf_SrblpLFRBmCUyzFuvbd_ROTsQF_8oA
 
@@ -178,7 +184,7 @@ darkblondii.live:
 
 darkblondii.de:
   mx:
-    "@/10": darkblondii.de
+    "@/10": darkblondii.de.
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
@@ -187,7 +193,13 @@ darkblondii.de:
     "@": "v=spf1 a mx -all"
     default._domainkey: "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr/e2vHLlv6CTwMoxHeyJxppb2d7z+voH7DeBOSQI/QM5qBT0yfLBJEg1/ayTrHIyzbXd0DOVfsk/Wv7i3fpPHnFfw9CYSIn8pQEL9+seUc/VP9FJ68+9akPkwUGinqE4nGkT7ByqDrUeZzErQMX1nqXxkwx0JpBZqFTxfNYi6IphbUSu4xatkFbGBFFOPiHxYyIZdp35uiHL8Ub+tpDJpQ7zLf5VVwlY9EeakzslV+UJhG/ANh6dkQwyXrdT0QQ0lC8RS1CF9qs060blqwk/QZvQG6WRON0aq6F/p+FZ4P7hFMoUiHVokdW1GIAXUpleTwXnXGZmJG4g2dM6HFv+fQIDAQAB;"
     _domainkey: "o=-"
-    _DMARC: "v=DMARC1; p=quarantine; rua=mailto:huebner@jan-ole.de; ruf=mailto:huebner@jan-ole.de; fo=1"
+    _dmarc: "v=DMARC1; p=quarantine; rua=mailto:huebner@jan-ole.de; ruf=mailto:huebner@jan-ole.de; fo=1"
+  srv:
+    "_smtps._tcp": "0 0 465 darkblondii.de."
+    "_imaps._tcp": "0 0 993 darkblondii.de."
+    "_pop3s._tcp": "0 0 995 darkblondii.de."
+    "_autodiscover._tcp": "0 0 443 darkblondii.de."
+    "_autoconfig._tcp": "0 0 80 darkblondii.de."
 
 rosadirk.live:
   a:
@@ -200,14 +212,30 @@ rosadirk.de:
     www: 185.223.31.112
     webmail: 185.223.31.112
 
-huebner.software:
+darkblondii.shop:
+  mx:
+    "@/10": darkblondii.shop.
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    webmail: 185.223.31.112
+
+darkblondii.com:
+  mx:
+    "@/10": darkblondii.com.
+  a:
+    "@": 185.223.31.112
+    www: 185.223.31.112
+    webmail: 185.223.31.112
+
+#huebner.software:
 
 huebner.pink:
   cname:
     sig1._domainkey: "sig1.dkim.huebner.pink.at.icloudmailadmin.com."
   mx:
-    "@/10": "mx01.mail.icloud.com"
-    "@/20": "mx02.mail.icloud.com"
+    "@/10": "mx01.mail.icloud.com."
+    "@/20": "mx02.mail.icloud.com."
   txt:
     "@": "apple-domain=mOjnPLSTRwMrIocF"
     "@/10": "v=spf1 include:icloud.com ~all"
