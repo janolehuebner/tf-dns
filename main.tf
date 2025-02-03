@@ -21,9 +21,9 @@ locals {
 }
 
 resource "hetznerdns_zone" "zone" {
-  for_each = local.zones
-  name = each.key
-  ttl  = 300
+  for_each  = local.zones
+  name      = each.key
+  ttl       = 300
 }
 
 resource "hetznerdns_record" "myrecord" {
@@ -31,9 +31,9 @@ for_each = {
   for record in local.zone_data : "${record.record_type}${record.extra_data}-${record.record_name}.${record.zone_name}" => record }
 
   zone_id = hetznerdns_zone.zone[each.value.zone_name].id
-  name   = "${each.value.record_name}"
-  type   = each.value.record_type
-  value  = each.value.record_type == "MX" ? "${each.value.extra_data} ${each.value.record_value}" : each.value.record_value
+  name    = "${each.value.record_name}"
+  type    = each.value.record_type
+  value   = each.value.record_type == "MX" ? "${each.value.extra_data} ${each.value.record_value}" : each.value.record_value
   ttl     = 300
 
 }
