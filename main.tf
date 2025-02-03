@@ -19,20 +19,12 @@ locals {
     ]]
   ])
 }
-output "zones" {
-  value = length(local.zones)
-}
 
 resource "hetznerdns_zone" "zone" {
   for_each = local.zones
   name = each.key
   ttl  = 300
 }
-
-
-
-
-
 
 resource "hetznerdns_record" "myrecord" {
 for_each = {
@@ -64,4 +56,5 @@ resource "hetznerdns_record" "ns" {
   type    = "NS"
   value   = each.value.ns_entry
   ttl     = 300
+
 }
