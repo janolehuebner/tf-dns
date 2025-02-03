@@ -1,7 +1,7 @@
 
 locals {
-  api = yamldecode(file("${path.module}/auth.yaml"))
-  zones          = yamldecode(file("${path.module}/zones.yaml"))
+  api   = yamldecode(file("${path.module}/auth.yaml"))
+  zones = yamldecode(file("${path.module}/zones.yaml"))
 
   zone_data = flatten([
     for zone_name, records in local.zones : [
