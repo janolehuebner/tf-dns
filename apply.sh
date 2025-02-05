@@ -26,6 +26,12 @@ if ! tofu plan -out=tfplan 2>&1 | tee plan.log; then
     fi
 fi
 
+# Check if no changes are required
+if grep -q "No changes" plan.log; then
+    echo "✅ No changes detected. Exiting."
+    exit 0
+fi
+
 #applying a planfile skips confirmations...
 echo "✅ Plan successful. Ready to apply changes."
 echo "Do you want to apply these changes? (y/n)"

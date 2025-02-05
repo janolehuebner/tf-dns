@@ -5,3 +5,5 @@ venv/
 .terraform.lock.hcl
 .terraform
 auth.yaml
+tfplan
+plan.log
