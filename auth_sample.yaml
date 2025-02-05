@@ -1,3 +1,2 @@
 auth:
   api_token: !add
-  email: !add
