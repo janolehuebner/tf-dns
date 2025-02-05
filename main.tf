@@ -1,7 +1,25 @@
 
+
 locals {
   api   = yamldecode(file("${path.module}/auth.yaml"))
   zones = yamldecode(file("${path.module}/zones.yaml"))
+  nameservers = data.hetznerdns_nameservers.primary.ns
+
+
+
+
+
+  ns_data = flatten([
+    for zone_name, records in local.zones : [
+      for ns_entry in local.nameservers : {
+        zone_name    = zone_name
+        record_type  = "NS"
+        record_value = ns_entry.name
+        record_name  = "@"
+        extra_data   = ""
+      }
+    ]
+  ])
 
   zone_data = flatten([
     for zone_name, records in local.zones : [
@@ -18,6 +36,10 @@ locals {
       ]
     ]]
   ])
+}
+
+data "hetznerdns_nameservers" "primary" {
+  type = "authoritative"
 }
 
 resource "hetznerdns_zone" "zone" {
@@ -38,23 +60,16 @@ for_each = {
 
 }
 
+
 resource "hetznerdns_record" "ns" {
   for_each = {
-    for entry in flatten([
-      for zone in hetznerdns_zone.zone : [
-        for ns_entry in zone.ns : {
-          zone_id  = zone.id
-          ns_entry = ns_entry
-          key      = "${zone.id}-${ns_entry}"
-        }
-      ]
-    ]) : entry.key => entry
+    for record in local.ns_data :
+      "${record.record_type}-${record.record_name}-${record.zone_name}-${record.record_value}" => record
   }
 
-  zone_id = each.value.zone_id
-  name    = "@"
-  type    = "NS"
-  value   = each.value.ns_entry
+  zone_id = hetznerdns_zone.zone[each.value.zone_name].id
+  name    = each.value.record_name
+  type    = each.value.record_type
+  value   = each.value.record_value
   ttl     = 300
-
 }
