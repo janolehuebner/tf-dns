@@ -2,12 +2,11 @@ terraform {
   required_providers {
     hetznerdns = {
       source = "germanbrew/hetznerdns"
-      version = "3.0.0"  # Replace with latest version
+      version = "3.3.3"
     }
   }
 }
 
 provider "hetznerdns" {
-api_token = local.api.auth.api_token
+  api_token = local.api.auth.api_token
 }
-
