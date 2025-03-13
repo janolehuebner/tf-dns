@@ -37,7 +37,7 @@ jan-ole.de:
     influx: lana.amq25ga7psako0gd.myfritz.net.
     "*.influx": lana.amq25ga7psako0gd.myfritz.net.
     books: lana.amq25ga7psako0gd.myfritz.net.
-    sig1_domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com
+    sig1._domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com.
     streaming: lana.amq25ga7psako0gd.myfritz.net.
     "*.streaming": lana.amq25ga7psako0gd.myfritz.net.
     lana: lana.amq25ga7psako0gd.myfritz.net.
@@ -45,7 +45,7 @@ jan-ole.de:
     "@/10": mx01.mail.icloud.com.
     "@/20": mx02.mail.icloud.com.
   txt:
-    "@": apple-domain=OQLm26hZZUfPPxoQ
+    "@": apple-domain=QREjDJD5KtZRhlq8
     "@/10": "v=spf1 redirect=icloud.com include:icloud.com ~all"
     "@/20": google-site-verification=rzO53ch4FY1zxgms9_FJAyE0nnj9_uRmLaSKqXw38ww
     "_discord": dh=ddb43cee298d9a23196b21847105f88aafae8350
@@ -59,9 +59,12 @@ jan-ole.download:
 fairy-feet.de:
 
 jan-ole.link:
+  mx:
+    "@/10": jan-ole.link.
   a:
     "@": 185.223.31.112
     www: 185.223.31.112
+    webmail: 185.223.31.112
   txt:
     "@": google-site-verification=HKmGUIFhbnE41t_358P10qZKhEufHzMAzlCSrv1iQW4
 
@@ -104,79 +107,34 @@ huebner.haus:
     heiko: kgh7xxzoeeajftib.myfritz.net.
     "*.heiko": kgh7xxzoeeajftib.myfritz.net.
 
-huebner.homes:
-
-littleblondii.link:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-  txt:
-    "@": google-site-verification=t7GFUeWz5_o8uNCiVC2neG9fykDyBNJpvrKOsm_rgJg
-
-littleblondii.live:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-
-  txt:
-    "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
 blondii.link:
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
   txt:
     "@": google-site-verification=nCc2Fw7XciUq9-1eWAUPU1LhPaWx1gMeIKBaDDfy3Ks
 
 blondii.live:
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    download: 185.223.31.112
-    "*.download": 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
+    download: 134.255.232.17
+    "*.download": 134.255.232.17
   txt:
     "@": google-site-verification=o1EqL6Qo5RTrUz61EGh75YfhX0FkNCk848Hb5qDCes4
 
-littleblondii.de:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-  txt:
-    "@": google-site-verification=QDQCs2MeR73I0xPktUMmsqa9PuPkytpXYdCQEI-ekaM
-
-cirii.link:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    download: 185.223.31.112
-  txt:
-    "@": google-site-verification=mz-r1UCGgDSf_SrblpLFRBmCUyzFuvbd_ROTsQF_8oA
-
-cirii.live:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-  txt:
-    "@": google-site-verification=znOYwzJskM1sIZhpSikU7e1-QFCVWXlcPl3VVk5o68o
-
-cirii.de:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-  txt:
-    "@": google-site-verification=RVjsHk1eDqRo0PCffqxguk3YRfFZtUdsUUgfEs_lzvo
-
 darkblondii.link:
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
   txt:
     "@": google-site-verification=OtXtrYhaTsngZOMzfAwtgqUgnALh2sUfB8UoS53z0yo
 
 darkblondii.live:
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
   txt:
     "@": google-site-verification=iwzEIcfA2YXNIPFEs7gjkPJbeS8uJeF9KZIwxDiJeks
 
@@ -184,49 +142,31 @@ darkblondii.de:
   mx:
     "@/10": darkblondii.de.
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    webmail: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
+    webmail: 134.255.232.17
   txt:
+    "@/10": "google-site-verification=u9v4bvqD26WB5o8nO7zW9VMG5ZmjcNTSK_f6sAuNYSc"
     "@": "v=spf1 a mx -all"
-    default._domainkey: "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr/e2vHLlv6CTwMoxHeyJxppb2d7z+voH7DeBOSQI/QM5qBT0yfLBJEg1/ayTrHIyzbXd0DOVfsk/Wv7i3fpPHnFfw9CYSIn8pQEL9+seUc/VP9FJ68+9akPkwUGinqE4nGkT7ByqDrUeZzErQMX1nqXxkwx0JpBZqFTxfNYi6IphbUSu4xatkFbGBFFOPiHxYyIZdp35uiHL8Ub+tpDJpQ7zLf5VVwlY9EeakzslV+UJhG/ANh6dkQwyXrdT0QQ0lC8RS1CF9qs060blqwk/QZvQG6WRON0aq6F/p+FZ4P7hFMoUiHVokdW1GIAXUpleTwXnXGZmJG4g2dM6HFv+fQIDAQAB;"
+    default._domainkey: "v=DKIM1;k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0kl6jrx7/DiYktLY9mEEnVLpMA8TWgCuNBzNn0Io2tdb8+/FbWqB5P+Ps+3iGpm+A0WzFCHgBTyA16KtRUJ4uTs8BZdF/oM6jzEKJhJKaPsy27y8+/1tg2Dlko3vRHcIjLmebCQigMZtf4r9Ue6PhSlSB/0CyUdbqyXX+YqQjPwIDAQAB"
     _domainkey: "o=-"
     _dmarc: "v=DMARC1; p=quarantine; rua=mailto:huebner@jan-ole.de; ruf=mailto:huebner@jan-ole.de; fo=1"
-  srv:
-    "_smtps._tcp": "0 0 465 darkblondii.de."
-    "_imaps._tcp": "0 0 993 darkblondii.de."
-    "_pop3s._tcp": "0 0 995 darkblondii.de."
-    "_autodiscover._tcp": "0 0 443 darkblondii.de."
-    "_autoconfig._tcp": "0 0 80 darkblondii.de."
-
-rosadirk.live:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    webmail: 185.223.31.112
-rosadirk.de:
-  a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    webmail: 185.223.31.112
 
 darkblondii.shop:
   mx:
     "@/10": darkblondii.shop.
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    webmail: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
+    webmail: 134.255.232.17
 
 darkblondii.com:
   mx:
     "@/10": darkblondii.com.
   a:
-    "@": 185.223.31.112
-    www: 185.223.31.112
-    webmail: 185.223.31.112
+    "@": 134.255.232.17
+    www: 134.255.232.17
 
-huebner.software:
 
 huebner.pink:
   cname:
