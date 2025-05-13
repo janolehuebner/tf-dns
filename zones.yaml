@@ -22,25 +22,16 @@ jan-ole.de:
     "*.usa.vpn": 181.214.240.124
 
     #webspace0-------------
-    "@": 185.223.31.112
     www: 185.223.31.112
+    "@": 185.223.31.112
     "*.demo": 185.223.31.112
     demo: 185.223.31.112
-    "*.nuxt": 185.223.31.112
-    nuxt: 185.223.31.112
-
-    #zap-gameserver
-    palworld: 193.23.127.45
-    "*.palworld": 193.23.127.45
 
   cname:
-    influx: lana.amq25ga7psako0gd.myfritz.net.
-    "*.influx": lana.amq25ga7psako0gd.myfritz.net.
-    books: ole.pink.
     sig1._domainkey: sig1.dkim.jan-ole.de.at.icloudmailadmin.com.
-    streaming: lana.amq25ga7psako0gd.myfritz.net.
-    "*.streaming": lana.amq25ga7psako0gd.myfritz.net.
-    lana: lana.amq25ga7psako0gd.myfritz.net.
+    streaming: jan-ole.cloud.
+    "*.streaming": jan-ole.cloud.
+    lana: jan-ole.cloud.
   mx:
     "@/10": mx01.mail.icloud.com.
     "@/20": mx02.mail.icloud.com.
@@ -57,10 +48,18 @@ jan-ole.download:
     "*": 185.239.237.65
 
 jan-ole.sh:
+  cname:
+    "www": janolehuebner.github.io.
   a:
-    "@": 185.239.237.65
-    www: 185.239.237.65
-    "*": 185.239.237.65
+    "@/10": 185.199.108.153
+    "@/20": 185.199.109.153
+    "@/30": 185.199.110.153
+    "@/40": 185.199.111.153
+  aaaa:
+    "@/10": 2606:50c0:8000::153
+    "@/20": 2606:50c0:8001::153
+    "@/30": 2606:50c0:8002::153
+    "@/40": 2606:50c0:8003::153
 
 jan-ole.dev:
   a:
@@ -95,24 +94,24 @@ ole.click:
 
 jan-ole.cloud:
   a:
-    "*": 185.249.197.56
-    "@": 185.249.197.56
-    pve: 185.239.239.162
-    pfsense: 185.249.197.56
-    vm0: 193.34.69.94
+    #zap-gameserver
+    palworld: 193.23.127.45
+    "*.palworld": 193.23.127.45
   cname:
-    "*.photos": lana.amq25ga7psako0gd.myfritz.net.
-    photos: lana.amq25ga7psako0gd.myfritz.net.
-    "*.next": lana.amq25ga7psako0gd.myfritz.net.
-    next: lana.amq25ga7psako0gd.myfritz.net.
-    ganymede: lana.amq25ga7psako0gd.myfritz.net.
-    "*.ganymede": lana.amq25ga7psako0gd.myfritz.net.
-    hannah: lana.amq25ga7psako0gd.myfritz.net.
-    "*.hannah": lana.amq25ga7psako0gd.myfritz.net.
-    lana: lana.amq25ga7psako0gd.myfritz.net.
-    "*.lana": lana.amq25ga7psako0gd.myfritz.net.
-    tube: lana.amq25ga7psako0gd.myfritz.net.
-    "*.tube": lana.amq25ga7psako0gd.myfritz.net.
+    influx: jan-ole.cloud.
+    "*.influx": jan-ole.cloud.
+    books: jan-ole.cloud.
+    dav: jan-ole.cloud.
+    "*.photos": jan-ole.cloud.
+    photos: jan-ole.cloud.
+    ganymede: jan-ole.cloud.
+    "*.ganymede": jan-ole.cloud.
+    lana: jan-ole.cloud.
+    "*.lana": jan-ole.cloud.
+    tube: jan-ole.cloud.
+    "*.tube": jan-ole.cloud.
+    streaming: jan-ole.cloud.
+    "*.streaming": jan-ole.cloud.
 
 ole.pink:
   txt:
@@ -120,8 +119,8 @@ ole.pink:
 
 huebner.haus:
   cname:
-    jan-ole: lana.amq25ga7psako0gd.myfritz.net.
-    "*.jan-ole": lana.amq25ga7psako0gd.myfritz.net.
+    jan-ole: jan-ole.cloud.
+    "*.jan-ole": jan-ole.cloud.
     heiko: kgh7xxzoeeajftib.myfritz.net.
     "*.heiko": kgh7xxzoeeajftib.myfritz.net.
 
